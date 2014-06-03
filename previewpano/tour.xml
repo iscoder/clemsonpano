@@ -1,0 +1,485 @@
+<krpano version="1.17" title="Virtual Tour" onstart="startup();">
+
+	<include url="skin/vtourskin.xml" />
+
+	<!-- set skin settings: bingmaps? gyro? thumbnail controlling? tooltips? -->
+	<skin_settings bingmaps="false"
+	               bingmaps_key=""
+	               bingmaps_zoombuttons="false"
+	               gyro="true"
+	               thumbs_width="120" thumbs_height="80" thumbs_padding="10" thumbs_crop="0|40|240|160"
+	               thumbs_opened="false"
+	               thumbs_text="false"
+	               thumbs_dragging="true"
+	               thumbs_onhoverscrolling="false"
+	               thumbs_scrollbuttons="false"
+	               thumbs_scrollindicator="false"
+	               thumbs_loop="false"
+	               tooltips_thumbs="false"
+	               tooltips_hotspots="false"
+	               tooltips_mapspots="false"
+	               controlbar_offset="20"
+	               />
+
+	<!-- set optional skin logo url -->
+	<layer name="skin_logo" url="" scale="0.25" opened_onclick="openurl('...',_blank);" />
+
+
+	<action name="startup">
+		if(startscene === null, copy(startscene,scene[0].name));
+		loadscene(get(startscene), null, MERGE);
+	</action>
+
+	
+	<scene name="scene_aerial_1" title="aerial_1" onstart="" thumburl="panos/aerial_1.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0" vlookat="0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/aerial_1.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" progressive="false">
+			<level tiledimagewidth="2387" tiledimageheight="2387">
+				<cube url="panos/aerial_1.tiles/%s/l3/%v/l3_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1194" tiledimageheight="1194">
+				<cube url="panos/aerial_1.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="597" tiledimageheight="597">
+				<cube url="panos/aerial_1.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+			<mobile>
+				<cube url="panos/aerial_1.tiles/mobile_%s.jpg" />
+			</mobile>
+		</image>
+
+		<!-- place your scene hotspots here -->
+
+	</scene>
+
+	<scene name="scene_aerial_2" title="aerial_2" onstart="" thumburl="panos/aerial_2.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0" vlookat="0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/aerial_2.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" progressive="false">
+			<level tiledimagewidth="2387" tiledimageheight="2387">
+				<cube url="panos/aerial_2.tiles/%s/l3/%v/l3_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1194" tiledimageheight="1194">
+				<cube url="panos/aerial_2.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="597" tiledimageheight="597">
+				<cube url="panos/aerial_2.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+			<mobile>
+				<cube url="panos/aerial_2.tiles/mobile_%s.jpg" />
+			</mobile>
+		</image>
+
+		<!-- place your scene hotspots here -->
+
+	</scene>
+
+	<scene name="scene_baseball_mound" title="baseball_mound" onstart="" thumburl="panos/baseball_mound.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0" vlookat="0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/baseball_mound.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" progressive="false">
+			<level tiledimagewidth="2387" tiledimageheight="2387">
+				<cube url="panos/baseball_mound.tiles/%s/l3/%v/l3_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1194" tiledimageheight="1194">
+				<cube url="panos/baseball_mound.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="597" tiledimageheight="597">
+				<cube url="panos/baseball_mound.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+			<mobile>
+				<cube url="panos/baseball_mound.tiles/mobile_%s.jpg" />
+			</mobile>
+		</image>
+
+		<!-- place your scene hotspots here -->
+
+	</scene>
+
+	<scene name="scene_boat_house" title="boat_house" onstart="" thumburl="panos/boat_house.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0" vlookat="0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/boat_house.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" progressive="false">
+			<level tiledimagewidth="2387" tiledimageheight="2387">
+				<cube url="panos/boat_house.tiles/%s/l3/%v/l3_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1194" tiledimageheight="1194">
+				<cube url="panos/boat_house.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="597" tiledimageheight="597">
+				<cube url="panos/boat_house.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+			<mobile>
+				<cube url="panos/boat_house.tiles/mobile_%s.jpg" />
+			</mobile>
+		</image>
+
+		<!-- place your scene hotspots here -->
+
+	</scene>
+
+	<scene name="scene_computer_room" title="computer_room" onstart="" thumburl="panos/computer_room.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0" vlookat="0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/computer_room.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" progressive="false">
+			<level tiledimagewidth="2387" tiledimageheight="2387">
+				<cube url="panos/computer_room.tiles/%s/l3/%v/l3_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1194" tiledimageheight="1194">
+				<cube url="panos/computer_room.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="597" tiledimageheight="597">
+				<cube url="panos/computer_room.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+			<mobile>
+				<cube url="panos/computer_room.tiles/mobile_%s.jpg" />
+			</mobile>
+		</image>
+
+		<!-- place your scene hotspots here -->
+
+	</scene>
+
+	<scene name="scene_cru_lockerroom" title="cru_lockerroom" onstart="" thumburl="panos/cru_lockerroom.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0" vlookat="0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/cru_lockerroom.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" progressive="false">
+			<level tiledimagewidth="2387" tiledimageheight="2387">
+				<cube url="panos/cru_lockerroom.tiles/%s/l3/%v/l3_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1194" tiledimageheight="1194">
+				<cube url="panos/cru_lockerroom.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="597" tiledimageheight="597">
+				<cube url="panos/cru_lockerroom.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+			<mobile>
+				<cube url="panos/cru_lockerroom.tiles/mobile_%s.jpg" />
+			</mobile>
+		</image>
+
+		<!-- place your scene hotspots here -->
+
+	</scene>
+
+	<scene name="scene_cru_lounge" title="cru_lounge" onstart="" thumburl="panos/cru_lounge.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0" vlookat="0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/cru_lounge.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" progressive="false">
+			<level tiledimagewidth="2387" tiledimageheight="2387">
+				<cube url="panos/cru_lounge.tiles/%s/l3/%v/l3_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1194" tiledimageheight="1194">
+				<cube url="panos/cru_lounge.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="597" tiledimageheight="597">
+				<cube url="panos/cru_lounge.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+			<mobile>
+				<cube url="panos/cru_lounge.tiles/mobile_%s.jpg" />
+			</mobile>
+		</image>
+
+		<!-- place your scene hotspots here -->
+
+	</scene>
+
+	<scene name="scene_cru_rowing_room" title="cru_rowing_room" onstart="" thumburl="panos/cru_rowing_room.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0" vlookat="0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/cru_rowing_room.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" progressive="false">
+			<level tiledimagewidth="2387" tiledimageheight="2387">
+				<cube url="panos/cru_rowing_room.tiles/%s/l3/%v/l3_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1194" tiledimageheight="1194">
+				<cube url="panos/cru_rowing_room.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="597" tiledimageheight="597">
+				<cube url="panos/cru_rowing_room.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+			<mobile>
+				<cube url="panos/cru_rowing_room.tiles/mobile_%s.jpg" />
+			</mobile>
+		</image>
+
+		<!-- place your scene hotspots here -->
+
+	</scene>
+
+	<scene name="scene_hole_17" title="hole_17" onstart="" thumburl="panos/hole_17.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0" vlookat="0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/hole_17.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" progressive="false">
+			<level tiledimagewidth="2387" tiledimageheight="2387">
+				<cube url="panos/hole_17.tiles/%s/l3/%v/l3_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1194" tiledimageheight="1194">
+				<cube url="panos/hole_17.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="597" tiledimageheight="597">
+				<cube url="panos/hole_17.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+			<mobile>
+				<cube url="panos/hole_17.tiles/mobile_%s.jpg" />
+			</mobile>
+		</image>
+
+		<!-- place your scene hotspots here -->
+
+	</scene>
+
+	<scene name="scene_indoor_tennis" title="indoor_tennis" onstart="" thumburl="panos/indoor_tennis.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0" vlookat="0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/indoor_tennis.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" progressive="false">
+			<level tiledimagewidth="2387" tiledimageheight="2387">
+				<cube url="panos/indoor_tennis.tiles/%s/l3/%v/l3_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1194" tiledimageheight="1194">
+				<cube url="panos/indoor_tennis.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="597" tiledimageheight="597">
+				<cube url="panos/indoor_tennis.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+			<mobile>
+				<cube url="panos/indoor_tennis.tiles/mobile_%s.jpg" />
+			</mobile>
+		</image>
+
+		<!-- place your scene hotspots here -->
+
+	</scene>
+
+	<scene name="scene_indoor_track" title="indoor_track" onstart="" thumburl="panos/indoor_track.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0" vlookat="0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/indoor_track.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" progressive="false">
+			<level tiledimagewidth="2387" tiledimageheight="2387">
+				<cube url="panos/indoor_track.tiles/%s/l3/%v/l3_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1194" tiledimageheight="1194">
+				<cube url="panos/indoor_track.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="597" tiledimageheight="597">
+				<cube url="panos/indoor_track.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+			<mobile>
+				<cube url="panos/indoor_track.tiles/mobile_%s.jpg" />
+			</mobile>
+		</image>
+
+		<!-- place your scene hotspots here -->
+
+	</scene>
+
+	<scene name="scene_outdoor_tennis" title="outdoor_tennis" onstart="" thumburl="panos/outdoor_tennis.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0" vlookat="0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/outdoor_tennis.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" progressive="false">
+			<level tiledimagewidth="2387" tiledimageheight="2387">
+				<cube url="panos/outdoor_tennis.tiles/%s/l3/%v/l3_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1194" tiledimageheight="1194">
+				<cube url="panos/outdoor_tennis.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="597" tiledimageheight="597">
+				<cube url="panos/outdoor_tennis.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+			<mobile>
+				<cube url="panos/outdoor_tennis.tiles/mobile_%s.jpg" />
+			</mobile>
+		</image>
+
+		<!-- place your scene hotspots here -->
+
+	</scene>
+
+	<scene name="scene_putting_green" title="putting_green" onstart="" thumburl="panos/putting_green.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0" vlookat="0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/putting_green.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" progressive="false">
+			<level tiledimagewidth="2387" tiledimageheight="2387">
+				<cube url="panos/putting_green.tiles/%s/l3/%v/l3_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1194" tiledimageheight="1194">
+				<cube url="panos/putting_green.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="597" tiledimageheight="597">
+				<cube url="panos/putting_green.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+			<mobile>
+				<cube url="panos/putting_green.tiles/mobile_%s.jpg" />
+			</mobile>
+		</image>
+
+		<!-- place your scene hotspots here -->
+
+	</scene>
+
+	<scene name="scene_soccer" title="soccer" onstart="" thumburl="panos/soccer.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0" vlookat="0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/soccer.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" progressive="false">
+			<level tiledimagewidth="2387" tiledimageheight="2387">
+				<cube url="panos/soccer.tiles/%s/l3/%v/l3_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1194" tiledimageheight="1194">
+				<cube url="panos/soccer.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="597" tiledimageheight="597">
+				<cube url="panos/soccer.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+			<mobile>
+				<cube url="panos/soccer.tiles/mobile_%s.jpg" />
+			</mobile>
+		</image>
+
+		<!-- place your scene hotspots here -->
+
+	</scene>
+
+	<scene name="scene_team_room" title="team_room" onstart="" thumburl="panos/team_room.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0" vlookat="0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/team_room.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" progressive="false">
+			<level tiledimagewidth="2387" tiledimageheight="2387">
+				<cube url="panos/team_room.tiles/%s/l3/%v/l3_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1194" tiledimageheight="1194">
+				<cube url="panos/team_room.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="597" tiledimageheight="597">
+				<cube url="panos/team_room.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+			<mobile>
+				<cube url="panos/team_room.tiles/mobile_%s.jpg" />
+			</mobile>
+		</image>
+
+		<!-- place your scene hotspots here -->
+
+	</scene>
+
+	<scene name="scene_tillman2" title="tillman2" onstart="" thumburl="panos/tillman2.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0" vlookat="0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/tillman2.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" progressive="false">
+			<level tiledimagewidth="2387" tiledimageheight="2387">
+				<cube url="panos/tillman2.tiles/%s/l3/%v/l3_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1194" tiledimageheight="1194">
+				<cube url="panos/tillman2.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="597" tiledimageheight="597">
+				<cube url="panos/tillman2.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+			<mobile>
+				<cube url="panos/tillman2.tiles/mobile_%s.jpg" />
+			</mobile>
+		</image>
+
+		<!-- place your scene hotspots here -->
+
+	</scene>
+
+	<scene name="scene_tillman3" title="tillman3" onstart="" thumburl="panos/tillman3.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0" vlookat="0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/tillman3.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" progressive="false">
+			<level tiledimagewidth="2387" tiledimageheight="2387">
+				<cube url="panos/tillman3.tiles/%s/l3/%v/l3_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1194" tiledimageheight="1194">
+				<cube url="panos/tillman3.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="597" tiledimageheight="597">
+				<cube url="panos/tillman3.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+			<mobile>
+				<cube url="panos/tillman3.tiles/mobile_%s.jpg" />
+			</mobile>
+		</image>
+
+		<!-- place your scene hotspots here -->
+
+	</scene>
+
+	<scene name="scene_weightroom" title="weightroom" onstart="" thumburl="panos/weightroom.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0" vlookat="0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/weightroom.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" progressive="false">
+			<level tiledimagewidth="2387" tiledimageheight="2387">
+				<cube url="panos/weightroom.tiles/%s/l3/%v/l3_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1194" tiledimageheight="1194">
+				<cube url="panos/weightroom.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="597" tiledimageheight="597">
+				<cube url="panos/weightroom.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+			<mobile>
+				<cube url="panos/weightroom.tiles/mobile_%s.jpg" />
+			</mobile>
+		</image>
+
+		<!-- place your scene hotspots here -->
+
+	</scene>
+
+
+</krpano>
