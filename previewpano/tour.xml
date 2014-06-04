@@ -105,6 +105,28 @@
 		<!-- place your scene hotspots here -->
 
 	</scene>
+	
+	<scene name="scene_beach" title="beach" onstart="" thumburl="panos/beach.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0" vlookat="0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/beach.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" progressive="false">
+			<level tiledimagewidth="1114" tiledimageheight="1114">
+				<cube url="panos/beach.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="512" tiledimageheight="512">
+				<cube url="panos/beach.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+			<mobile>
+				<cube url="panos/beach.tiles/mobile_%s.jpg" />
+			</mobile>
+		</image>
+
+		<!-- place your scene hotspots here -->
+
+	</scene>
 
 	<scene name="scene_boat_house" title="boat_house" onstart="" thumburl="panos/boat_house.tiles/thumb.jpg" lat="" lng="" heading="">
 
